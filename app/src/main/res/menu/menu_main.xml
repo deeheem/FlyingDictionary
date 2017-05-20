@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.developers.dimi.myapplication.MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="?android:attr/actionModeWebSearchDrawable"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item
+        android:id="@+id/action_tutorial"
+        android:orderInCategory="1"
+        android:title="@string/action_tutorial"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="2"
+        android:title="Settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="3"
+        android:title="About"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="4"
+        android:title="Exit"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,27 @@
+SELECT 
+    a.lemma AS 'word',
+    c.definition,
+    c.pos AS 'part of speech',
+    d.sample AS 'example sentence',
+    (SELECT 
+            GROUP_CONCAT(a1.lemma)
+        FROM
+            words a1
+                INNER JOIN
+            senses b1 ON a1.wordid = b1.wordid
+        WHERE
+            b1.synsetid = b.synsetid
+                AND a1.lemma <> a.lemma
+        GROUP BY b1.synsetid) AS `synonyms`  
+    
+FROM
+    words a
+        INNER JOIN
+    senses b ON a.wordid = b.wordid
+        INNER JOIN
+    synsets c ON b.synsetid = c.synsetid
+        INNER JOIN
+    samples d ON b.synsetid = d.synsetid
+WHERE
+    a.lemma = 'carry'
+ORDER BY a.lemma , c.definition , d.sample;

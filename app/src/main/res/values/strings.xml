@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Flying Dictionary</string>
+    <string name="action_tutorial">Tutorial</string>
+    <string name="app_tvWarning">The Flying Dictionary requires 430 MB of free space to function properly.\nPlease clear some space.</string>
+    <string name="app_tvAbout">The Flying Dictionary explains the meaning of english words.</string>
+    <string name="app_tvABout2">The text in dictionary is extracted from http://wordnet.princeton.edu.</string>
+    <string name="app_tvCredits">Thanks to Arnav Gupta Sir for teaching us the concepts used in this app.</string>
+    <string name="search_hint">Search</string>
+</resources>

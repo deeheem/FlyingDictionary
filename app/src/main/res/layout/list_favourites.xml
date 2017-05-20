@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/cross"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="8dp"
+        android:layout_marginRight="4dp"
+        android:id="@+id/ivCross" />
+
+    <TextView
+        android:text="word"
+        android:textColor="@color/colorText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignBottom="@+id/ivCross"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:maxLines="1"
+        android:id="@+id/tvFav" />
+
+    <TextView
+        android:text=""
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/ivCross"
+        android:layout_alignRight="@+id/ivCross"
+        android:layout_alignEnd="@+id/ivCross" />
+
+</RelativeLayout>
